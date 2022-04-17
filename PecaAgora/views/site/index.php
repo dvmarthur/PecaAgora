@@ -17,6 +17,7 @@ $this->title = 'My Yii Application';
 </div>
 
 <div class="body-content">
+<?php if(!empty($thumbnail)){  ?>
 <div class="container mt-5 mb-5">
     <div class="row d-flex justify-content-center">
         <div class="col-md-10">
@@ -49,11 +50,12 @@ $this->title = 'My Yii Application';
         </div>
     </div>
 </div>
+    <?php } ?>
     <!-- <div class="row">
         <div class="col-lg-12">
 
             <figure>
-                <img src=<?php echo $thumbnail ?> alt="Minha Figura">
+                <img src= alt="Minha Figura">
                
             </figure>
 
