@@ -45,8 +45,10 @@ class SiteController extends Controller
             CURLOPT_CUSTOMREQUEST => 'GET',
         ));
 
+        $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
-        return json_decode(curl_exec($curl), true);
+
+        return $response;
     }
 
     public function actionIndex()
