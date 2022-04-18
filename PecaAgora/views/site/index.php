@@ -26,7 +26,7 @@ $this->title = 'My Yii Application';
                             <div class="col-md-6">
                                 <div class="images p-3">
                                     <div class="text-center p-4"> <img id="main-image" src=<?php echo $thumbnail ?> width="250" /> </div>
-                                    <div class="thumbnail text-center"> <img onclick="change_image(this)" src=<?php echo $thumbnail ?> width="70"> <img onclick="change_image(this)" src=<?php echo $thumbnail ?> width="70"> </div>
+                                    <div class="thumbnail text-center"> <img  src=<?php echo $thumbnail ?> width="70"> <img  src=<?php echo $thumbnail ?> width="70"> </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -132,23 +132,3 @@ $this->title = 'My Yii Application';
     }
 </style>
 
-<script>
-    function change_image(image) {
-
-        var container = document.getElementById("main-image");
-
-        container.src = image.src;
-    }
-
-
-
-    document.addEventListener("DOMContentLoaded", function(event) {
-
-
-
-
-
-
-
-    });
-</script>
