@@ -61,7 +61,7 @@ class SiteController extends Controller
         if (!empty($_POST['meli_id'])) {
 
             $id = str_replace('-', '', $_POST['meli_id']);
-
+            $id = strtoupper($id);
             $response = $this->request_get('https://api.mercadolibre.com/items/', $id);
 
             if (isset($response['error'])) {
